@@ -1,0 +1,253 @@
+<html>
+
+<head>
+    <title>Case Study Between Google Lens And MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="">
+    <center>
+        <h3 style="font-style: oblique; color: crimson;">Case Study Between Google Lens And Mobile Lens</h3>
+        <br><br>
+        <Span>
+            <h1>Google Lens</h1>
+            <img id="img1" src="Google_Lens_-_new_logo.png">
+        </Span>
+        <br>
+        <h1>vs</h1>
+        <br>
+        <div class="btn btn-primary">
+            <h2>MobileNet</h2>
+        </div>
+        <br>
+        <br>
+
+        <center>
+            <div class="yeet">
+                <br>
+                <br>
+                <ol style="background-color: grey; border-radius: 7px;">
+                    <div class="test_image_and_result col-xs-12" style="background-color: grey; border: 7px;">
+
+                        <li class="col-sm-4 col-xs-12" style="background-color: grey;">
+                            <b style="color: honeydew;">Test Image - </b>
+                            <br>
+                            <br>
+                            <img class="img2" class="img-responsive" src="waterbottle.jpg">
+                            <br>
+                        </li>
+
+                        <h5 style="border-radius: 9px; background-color: white;" class="col-sm-4 col-xs-12">
+                            Output on <b>Google Lens</b>
+                            <span> </span>
+                        </h5>
+
+                        <h5 class="col-sm-4 col-xs-12" style="background-color: white; border-radius: 9px;">
+                            Output on <b>Mobilenet Model</b>
+                            <span> </span>
+                        </h5>
+
+                        <div class="mini_result" class="col-xs-12 ">
+                            <h4 style="color: white;">Result - </h4>
+                            <hr>
+                            <h4> Draw </h4>
+                        </div>
+
+                    </div>
+                </ol>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div class="yeet">
+                <br>
+                <br>
+                <ol style="background-color: grey; border-radius: 7px;">
+                    <div class="test_image_and_result col-xs-12" style="background-color: grey; border: 7px;">
+
+                        <li class="col-sm-4 col-xs-12" style="background-color: grey;">
+                            <b style="color: honeydew;">Test Image - </b>
+                            <br>
+                            <br>
+                            <img class="img2" class="img-responsive" src="shoes.jpg">
+                            <br>
+                        </li>
+
+                        <h5 style="border-radius: 9px; background-color: white;" class="col-sm-4 col-xs-12">
+                            Output on <b>Google Lens</b> - Shoes
+                            <span> </span>
+                        </h5>
+
+                        <h5 class="col-sm-4 col-xs-12" style="background-color: white; border-radius: 9px;">
+                            Output on <b>Mobilenet Model</b> - Yeezez
+                            <span> </span>
+                        </h5>
+
+                        <div class="mini_result" class="col-xs-12 ">
+                            <h4 style="color: white;">Result - </h4>
+                            <hr>
+                            <h4> Google Lens is more accurate </h4>
+                        </div>
+
+                    </div>
+                </ol>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div class="yeet">
+                <br>
+                <br>
+                <ol style="background-color: grey; border-radius: 7px;">
+                    <div class="test_image_and_result col-xs-12" style="background-color: grey; border: 7px;">
+
+                        <li class="col-sm-4 col-xs-12" style="background-color: grey;">
+                            <b style="color: honeydew;">Test Image - </b>
+                            <br>
+                            <br>
+                            <img class="img2" class="img-responsive" src="thumbnails_large__default_upload_bucket_WH1000XM4B_0001_002_39c0a2d9e11c8b89037f5466bce94fc4.png.png">
+                            <br>
+                        </li>
+
+                        <h5 style="border-radius: 9px; background-color: white;" class="col-sm-4 col-xs-12">
+                            Output on <b>Google Lens</b> - headphones
+                            <span> </span>
+                        </h5>
+
+                        <h5 class="col-sm-4 col-xs-12" style="background-color: white; border-radius: 9px;">
+                            Output on <b>Mobilenet Model</b> - gucci headphones
+                            <span> </span>
+                        </h5>
+
+                        <div class="mini_result" class="col-xs-12 ">
+                            <h4 style="color: white;">Result -</h4>
+                            <hr>
+                            <h4> Google Lens is more accurate</h4>
+                        </div>
+
+                    </div>
+                </ol>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </center>
+        <br><br>
+        <div class="yeet">
+            <br>
+            <br>
+            <ol style="background-color: grey; border-radius: 7px;">
+                <div class="test_image_and_result col-xs-12" style="background-color: grey; border: 7px;">
+
+                    <li class="col-sm-4 col-xs-12" style="background-color: grey;">
+                        <b style="color: honeydew;">Test Image - </b>
+                        <br>
+                        <br>
+                        <img class="img2" class="img-responsive" src="Among-Us-2.jpg">
+                        <br>
+                    </li>
+
+                    <h5 style="border-radius: 9px; background-color: white;" class="col-sm-4 col-xs-12">
+                        Output on <b>Google Lens</b> - Amongus
+                        <span> </span>
+                    </h5>
+
+                    <h5 class="col-sm-4 col-xs-12" style="background-color: white; border-radius: 9px;">
+                        Output on <b>Mobilenet Model</b> - Amigos
+                        <span> </span>
+                    </h5>
+
+                    <div class="mini_result" class="col-xs-12 ">
+                        <h4 style="color: white;">Result - </h4>
+                        <hr>
+                        <h4> Google Lens is more accurate</h4>
+                    </div>
+
+                </div>
+            </ol>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div class="yeet">
+            <br>
+            <br>
+            <ol style="background-color: grey; border-radius: 7px;">
+                <div class="test_image_and_result col-xs-12" style="background-color: grey; border: 7px;">
+
+                    <li class="col-sm-4 col-xs-12" style="background-color: grey;">
+                        <b style="color: honeydew;">Test Image - </b>
+                        <br>
+                        <br>
+                        <img class="img2" class="img-responsive" src="Small-bedroom-Ideal-Home.jpg">
+                        <br>
+                    </li>
+
+                    <h5 style="border-radius: 9px; background-color: white;" class="col-sm-4 col-xs-12">
+                        Output on <b>Google Lens</b> - small bedroom
+                        <span> </span>
+                    </h5>
+
+                    <h5 class="col-sm-4 col-xs-12" style="background-color: white; border-radius: 9px;">
+                        Output on <b>Mobilenet Model</b> - giant bedroom
+                        <span> </span>
+                    </h5>
+
+                    <div class="mini_result" class="col-xs-12 ">
+                        <h4 style="color: white;">Result - </h4>
+                        <hr>
+                        <h4> Google Lens is more accurate </h4>
+                    </div>
+
+                </div>
+            </ol>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br><br>
+        <div style="background-color: grey; border-radius: 9px; height: 100; width: 600px;">
+            <br>
+            <br>
+            <p>I have tested 5 images and <b>Google Lens</b> is more accurate. And <b>Mobilenet</b> is less accurate So according to my case study <b>Google Lens</b> is more accurate</p>
+            <br>
+            <br>
+        </div>
+
+    </center>
+    <br>
+    <br>
+    <br><br><br><br>
+    <div class="copy_right_footer ">
+        Developed by- WhitehatJr Team
+
+    </div>
+
+    <script src="main.js "></script>
+</body>
+
+</html>
